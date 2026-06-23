@@ -49,59 +49,59 @@ const ContactSection: React.FC = () => {
             </div>
 
             {/* Saleem Bhatti */}
-            <div className="flex gap-5 p-6 rounded-lg border border-[#c9a84c]/20 bg-gradient-to-br from-[#1a1200]/40 to-transparent hover:border-[#c9a84c]/40 transition-all duration-300">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c9a84c]/10 border border-[#c9a84c]/30 flex items-center justify-center">
-                <Phone size={20} className="text-[#c9a84c]" />
-              </div>
-              <div>
-                <h4 className="font-['Playfair_Display'] text-[#d4b866] font-semibold text-lg mb-2">
-                  Saleem Bhatti
-                </h4>
-                <a
-                  href="tel:03226100700"
-                  className="font-['Lato'] text-[#aaa] text-sm hover:text-[#c9a84c] transition-colors flex items-center gap-2"
-                >
-                  <span>0322-6100700</span>
-                </a>
-                <a
-                  href="https://wa.me/923226100700"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 mt-2 font-['Lato'] text-[#25D366] text-xs hover:text-[#1da851] transition-colors"
-                >
-                  <MessageCircle size={13} />
-                  WhatsApp
-                </a>
-              </div>
-            </div>
+<div className="flex gap-5 p-6 rounded-lg border border-[#c9a84c]/20 bg-gradient-to-br from-[#1a1200]/40 to-transparent hover:border-[#c9a84c]/40 transition-all duration-300">
+  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c9a84c]/10 border border-[#c9a84c]/30 flex items-center justify-center">
+    <Phone size={20} className="text-[#c9a84c]" />
+  </div>
+  <div>
+    <h4 className="font-['Playfair_Display'] text-[#d4b866] font-semibold text-lg mb-2">
+      Saleem Bhatti
+    </h4>
+    <a
+      href="tel:03226100700"
+      className="font-['Lato'] text-[#aaa] text-sm hover:text-[#c9a84c] transition-colors flex items-center gap-2"
+    >
+      <span>0322-6100700</span>
+    </a>
+    <a
+      href="https://wa.me/923226100700"
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-2 mt-2 font-['Lato'] text-[#25D366] text-xs hover:text-[#1da851] transition-colors"
+    >
+      <MessageCircle size={13} />
+      WhatsApp
+    </a>
+  </div>
+</div>
 
-            {/* Nadeem Bhatti */}
-            <div className="flex gap-5 p-6 rounded-lg border border-[#c9a84c]/20 bg-gradient-to-br from-[#1a1200]/40 to-transparent hover:border-[#c9a84c]/40 transition-all duration-300">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c9a84c]/10 border border-[#c9a84c]/30 flex items-center justify-center">
-                <Phone size={20} className="text-[#c9a84c]" />
-              </div>
-              <div>
-                <h4 className="font-['Playfair_Display'] text-[#d4b866] font-semibold text-lg mb-2">
-                  Nadeem Bhatti
-                </h4>
-                <a
-                  href="tel:03226100800"
-                  className="font-['Lato'] text-[#aaa] text-sm hover:text-[#c9a84c] transition-colors"
-                >
-                  0322-6100800
-                </a>
-                <a
-                  href="https://wa.me/923226100800"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 mt-2 font-['Lato'] text-[#25D366] text-xs hover:text-[#1da851] transition-colors"
-                >
-                  <MessageCircle size={13} />
-                  WhatsApp
-                </a>
-              </div>
-            </div>
-
+{/* Nadeem Bhatti */}
+<div className="flex gap-5 p-6 rounded-lg border border-[#c9a84c]/20 bg-gradient-to-br from-[#1a1200]/40 to-transparent hover:border-[#c9a84c]/40 transition-all duration-300">
+  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c9a84c]/10 border border-[#c9a84c]/30 flex items-center justify-center">
+    <Phone size={20} className="text-[#c9a84c]" />
+  </div>
+  <div>
+    <h4 className="font-['Playfair_Display'] text-[#d4b866] font-semibold text-lg mb-2">
+      Nadeem Bhatti
+    </h4>
+    <a
+      href="tel:03226100800"
+      /* FIXED: Added 'flex items-center gap-2' to push WhatsApp onto its own row */
+      className="font-['Lato'] text-[#aaa] text-sm hover:text-[#c9a84c] transition-colors flex items-center gap-2"
+    >
+      <span>0322-6100800</span>
+    </a>
+    <a
+      href="https://wa.me/923226100800"
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-2 mt-2 font-['Lato'] text-[#25D366] text-xs hover:text-[#1da851] transition-colors"
+    >
+      <MessageCircle size={13} />
+      WhatsApp
+    </a>
+  </div>
+</div>
             {/* Hours */}
             <div className="flex gap-5 p-6 rounded-lg border border-[#c9a84c]/20 bg-gradient-to-br from-[#1a1200]/40 to-transparent hover:border-[#c9a84c]/40 transition-all duration-300">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#c9a84c]/10 border border-[#c9a84c]/30 flex items-center justify-center">
