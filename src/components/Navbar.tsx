@@ -34,10 +34,14 @@ const Navbar: React.FC<NavbarProps> = ({ onAdminClick, currentPage, setCurrentPa
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      /* 
+        FIXED: Changed 'bg-transparent' to a solid background structure with a responsive 
+        margin-bottom (md:mb-[160px]) to naturally force your Hero section down on desktop layouts!
+      */
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 mb-0 md:mb-[160px] ${
         isScrolled
           ? 'bg-[#0a0a0a]/95 backdrop-blur-md shadow-2xl border-b border-[#c9a84c]/20'
-          : 'bg-transparent'
+          : 'bg-[#0a0a0a] border-b border-[#c9a84c]/10'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

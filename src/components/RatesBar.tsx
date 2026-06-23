@@ -59,4 +59,4 @@ const RatesBar: React.FC = () => {
   );
 };
 
-export default RatesBar;
+export default RatesBar;  
