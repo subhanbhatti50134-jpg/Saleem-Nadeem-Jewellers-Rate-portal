@@ -13,10 +13,10 @@ const HeroSection: React.FC = () => {
     <section
       id="home"
       /* 
-        FIXED: Added 'pt-28 md:pt-48' to push your content down dynamically on laptops 
-        so the fixed rates bar never cuts off the word "SALEEM" again!
+        FIXED: Adjusted to pt-12 for a tight, centered mobile look, 
+        and lg:pt-48 to keep the desktop clear of the sticky rates bar.
       */
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-28 md:pt-48"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-12 lg:pt-48"
       style={{
         background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1100 40%, #0d0900 70%, #0a0a0a 100%)',
       }}
@@ -39,9 +39,9 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* Corner ornaments */}
-      {/* ADJUSTED: Moved the top ornaments down slightly ('top-32') so they clear the sticky bar area */}
-      <div className="absolute top-32 left-8 w-16 h-16 border-l-2 border-t-2 border-[#c9a84c]/30" />
-      <div className="absolute top-32 right-8 w-16 h-16 border-r-2 border-t-2 border-[#c9a84c]/30" />
+      {/* ADJUSTED: top positions use responsive utilities (top-24 on mobile, top-36 on desktop) */}
+      <div className="absolute top-24 lg:top-36 left-8 w-16 h-16 border-l-2 border-t-2 border-[#c9a84c]/30" />
+      <div className="absolute top-24 lg:top-36 right-8 w-16 h-16 border-r-2 border-t-2 border-[#c9a84c]/30" />
       <div className="absolute bottom-16 left-8 w-16 h-16 border-l-2 border-b-2 border-[#c9a84c]/30" />
       <div className="absolute bottom-16 right-8 w-16 h-16 border-r-2 border-b-2 border-[#c9a84c]/30" />
 

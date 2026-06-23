@@ -16,8 +16,11 @@ const RatesBar: React.FC = () => {
   ];
 
   return (
-    /* CHANGED: 'relative' for mobile scrolling, 'lg:fixed' + 'lg:top-[74px]' to pin under navbar on laptops */
-    <div className="relative lg:fixed lg:top-[74px] left-0 w-full z-40 bg-gradient-to-r from-[#0a0a0a] via-[#1a1200] to-[#0a0a0a] border-t border-b border-[#c9a84c]/30">
+    /* 
+      CHANGED: Added 'hidden lg:block' to hide the entire component on mobile 
+      and only show it on laptop/desktop layouts.
+    */
+    <div className="hidden lg:block lg:fixed lg:top-[74px] left-0 w-full z-40 bg-gradient-to-r from-[#0a0a0a] via-[#1a1200] to-[#0a0a0a] border-t border-b border-[#c9a84c]/30">
       {/* Ticker top line */}
       <div className="bg-[#c9a84c] py-1 px-4 flex items-center gap-2">
         <TrendingUp size={12} className="text-[#0a0a0a]" />
@@ -59,4 +62,4 @@ const RatesBar: React.FC = () => {
   );
 };
 
-export default RatesBar;  
+export default RatesBar;
