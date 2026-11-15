@@ -6,26 +6,24 @@ interface AuthContextType {
   logout: () => void;
 }
 
+// NOTE: this frontend has no backend, so real server-side authentication is
+// not possible here. No admin credentials are stored in source code.
+// sessionStorage only persists a UI flag for this session; it is NOT a
+// security control and can be inspected by anyone with access to the browser.
 const AuthContext = createContext<AuthContextType>({
   isAuthenticated: false,
   login: () => false,
   logout: () => {},
 });
 
-const ADMIN_USERNAME = 'admin';
-const ADMIN_PASSWORD = 'SNJ@2024';
-
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(() => {
-    return sessionStorage.getItem('snj_auth') === 'true';
-  });
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
 
-  const login = (username: string, password: string): boolean => {
-    if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
-      setIsAuthenticated(true);
-      sessionStorage.setItem('snj_auth', 'true');
-      return true;
-    }
+  const login = (_username: string, _password: string): boolean => {
+    // Client-side login is intentionally disabled: there is no backend to
+    // verify credentials against, and hardcoding a password here would expose
+    // it in the repository. Wire this up to a real /api/admin/login endpoint
+    // before relying on the admin panel for access control.
     return false;
   };
 
