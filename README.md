@@ -1,5 +1,7 @@
 # Saleem Nadeem Jewellers — Gold & Silver Rate Portal
 
+![Project banner for Saleem Nadeem Jewellers](docs/images/rate-portal-banner.png)
+
 A small storefront rate portal for **Saleem Nadeem Jewellers, Sarafa Market,
 Daska**. It displays current gold and silver rates (per tola) and lets an
 admin update them.
