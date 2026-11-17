@@ -1,5 +1,7 @@
 # Saleem Nadeem Jewellers — Gold & Silver Rate Portal
 
+[![CI](https://github.com/subhanbhatti50134-jpg/Saleem-Nadeem-Jewellers-Rate-portal/actions/workflows/ci.yml/badge.svg)](https://github.com/subhanbhatti50134-jpg/Saleem-Nadeem-Jewellers-Rate-portal/actions/workflows/ci.yml)
+
 ![Project banner for Saleem Nadeem Jewellers](docs/images/rate-portal-banner.png)
 
 A small storefront rate portal for **Saleem Nadeem Jewellers, Sarafa Market,
